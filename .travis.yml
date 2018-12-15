@@ -17,4 +17,5 @@ script:
     - cd hello-example
     - sudo python setup.py install
     - cd ../test/
+    - ls
     - python test_hello_example.py
