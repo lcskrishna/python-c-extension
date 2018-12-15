@@ -9,13 +9,13 @@ python :
 
 before_install:
     - "pip install -U pip"
+    - cd hello-example/
     - python setup.py install
 
 branches:
     - master
 
 script:
-    - cd hello-example
     - sudo python setup.py install
     - cd ../test/
     - ls
