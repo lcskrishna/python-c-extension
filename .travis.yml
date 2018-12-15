@@ -1,0 +1,19 @@
+language : python
+sudo : true
+
+os:
+    - linux
+
+python :
+    - "2.7"
+
+before_install:
+    - "pip install -U pip"
+
+branches:
+    - master
+
+script:
+    - sudo python hello-example/setup.py install
+    - cd test
+    - python test_hello_example.py
